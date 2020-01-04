@@ -1,0 +1,9 @@
+- name: Home
+  link: /index.html
+- name: Blog
+  link: /blog.html
+- name: Daily
+  link: /daily.html
+- name: Something
+  link: /else.html
+

@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,maximum-scale=1.0, user-scalable=no">
+  <script src="assets/js/jquery-3.4.1.js"></script>
+  <link rel="shortcut icon" href="assets/images/microfavicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/images/microfavicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+{% include navigation.html%}
+{{ content }}
+<script type="text/javascript" src="assets/js/b.js"></script>
+<script>
+  b.openZDdiy({
+    width: 300,//整个控件宽度
+    itemheight: 40,//每行日期的高度
+    daytextsize: 16,//日期的文字大小
+    id: "rili",//设置的布局
+    selectimg: 'assets/images/zmcselect.png',//选中的背景图
+    leftimg: 'assets/images/zmcleft.png',//上个月背景图
+    rightimg: 'assets/images/zmcright.png',//下个月背景图
+    mainbac: '#FAFFF9',//整体背景色
+    titlebac: '#FDE102',//头部背景色
+    isfromtoday: true,//当天之前的是否不可以点击
+    datelong: 7,//最长可以选择几天
+    daterange: function(timearray, start, stop){
+      console.log(JSON.stringify(timearray) + "==" + start + "==" + stop);//如果超过了7天的话 返回的都是false
+    }
+  });
+</script>
+</body>
+<!-- weather -->
+<script type="text/javascript">
+  WIDGET = {FID: '384AJFIELe'}
+</script>
+<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
+</html>

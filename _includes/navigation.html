@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-expand-sm bg-white navbar-light" role="navigation">
+    <ul class="nav nav-tabs">
+        {% for item in site.data.navigation %}
+        <li class="nav-item">
+            <a class="nav-link active" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+        {%endfor%}
+        <li class="nav-item">
+            <a class="nav-link" href="#">今</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">天</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">又</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">没</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">吃</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">药</a>
+        </li>
+    </ul>
+</nav>

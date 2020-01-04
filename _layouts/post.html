@@ -1,0 +1,15 @@
+---
+layout: default
+isPost: true
+---
+<article class="main-article main-article-page">
+    <div>
+        <h3 class="violet-title-item">{{ page.title }}</h3>
+    </div>
+    <div >
+        <p class="main-article-meta"><time pubdate="{{ rpost.date | date_to_utc | date: '%Y-%m-%d' }}">{{ page.date | date_to_utc | date: "%Y-%m-%d" }}</time></p>
+        <div class="main-article-contant">
+            {{ content }}
+        </div>
+    </div>
+</article>
