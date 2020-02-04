@@ -7,15 +7,14 @@ isIndex: true
     <canvas id="live2d" width="200" height="300" class="live2d"></canvas>
     <div class="hide-button">隐藏</div>
 </div>
-<script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
-    var message_Path = '../assets/live2d/'
+    var message_Path = '{{site.url}}/assets/live2d/'
     var home_Path = 'https://elpsykongroo.com/'
 </script>
-<script type="text/javascript" src="../assets/live2d/js/live2d.js"></script>
-<script type="text/javascript" src="../assets/live2d/js/message.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="{{site.url}}/assets/live2d/js/message.js"></script>
 <script type="text/javascript">
-    loadlive2d("live2d", "../assets/live2d/model/leimu/leimu.model.json");
+    loadlive2d("live2d", "{{site.url}}/assets/live2d/model/leimu/leimu.model.json");
 </script>
 
 
