@@ -11,9 +11,10 @@ ul.nav-pills {
 .dropdown>.dropdown-toggle:active{
   pointer-events:none;
 }
-.text{
-  background-image: url(assets/images/zmcselect.png);
+
+/*.text{
+  background-image: url({{site.url}}/assets/images/zmcselect.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
-}
+}*/
