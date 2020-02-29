@@ -101,7 +101,7 @@ initTips();
     showMessage(text, 12000);
 })();
 
-window.setInterval(showHitokoto,30000);
+//window.setInterval(showHitokoto,30000);
 
 function showHitokoto(){
     $.getJSON('https://sslapi.hitokoto.cn/',function(result){
