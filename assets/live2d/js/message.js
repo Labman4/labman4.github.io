@@ -21,7 +21,6 @@ String.prototype.renderTip = function (context) {
 };
 
 var re = /x/;
-console.log(re);
 re.toString = function() {
     showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
     return '';
@@ -101,10 +100,10 @@ initTips();
     showMessage(text, 12000);
 })();
 
-//window.setInterval(showHitokoto,30000);
+window.setInterval(showHitokoto,30000);
 
 function showHitokoto(){
-    $.getJSON('https://sslapi.hitokoto.cn/',function(result){
+    $.getJSON('https://v1.hitokoto.cn/',function(result){
         showMessage(result.hitokoto, 5000);
     });
 }
