@@ -4,7 +4,7 @@ category : lessons
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
 ---
-{% include JB/setup %}
+
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
@@ -342,7 +342,7 @@ YAML Front Matter must be prepended to the top of template/post/page files:
     category : pages
     tags : [how-to, jekyll]
     ---
-
+    
     ... contents ...
 
 Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.
@@ -367,18 +367,18 @@ Ultimately, Jekyll's job is to generate a static representation of your website.
 The following is an outline of how that's done:
 
 1. **Jekyll collects data.**
-  Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.
+    Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.
 
 2. **Jekyll computes data.**
-  Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
-  big `site` object that holds all the posts, pages, layouts, and respective metadata.
-  At this stage your site is one big computed ruby object.
+    Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one
+    big `site` object that holds all the posts, pages, layouts, and respective metadata.
+    At this stage your site is one big computed ruby object.
 
 3. **Jekyll liquifies posts and templates.**
-  Next jekyll loops through each post file and converts (through markdown or textile) and **liquifies** the post inside of its respective layout(s).
-  Once the post is parsed and liquified inside the the proper layout structure, the layout itself is "liquified".
+    Next jekyll loops through each post file and converts (through markdown or textile) and **liquifies** the post inside of its respective layout(s).
+    Once the post is parsed and liquified inside the the proper layout structure, the layout itself is "liquified".
 	**Liquification** is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler
-  hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.
+    hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.
 
 3. **Jekyll generates output.**
 	Finally the liquid templates are "rendered", thereby processing any liquid syntax provided in the templates
