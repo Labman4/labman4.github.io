@@ -26,9 +26,10 @@ github_username:  Labman4
 # Build settings
 markdown: kramdown
 #theme: minima
+excerpt_separator:  '<!-- more -->'
 plugins:
   # - jekyll-feed
-
+permalink: /blog/:year/:month/:day/:title
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
