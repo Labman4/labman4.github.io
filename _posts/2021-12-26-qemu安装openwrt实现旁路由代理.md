@@ -2,6 +2,8 @@
 qemu/kvm 安装openwrt
 ~~~
 
+<!-- more -->
+
 首先主机创建网桥
 
 选用netctl 管理
