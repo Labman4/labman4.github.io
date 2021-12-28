@@ -23,7 +23,36 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="1" background="https://steamuserimages-a.akamaihd.net/ugc/767226825567392485/DC72753CC998864EF619DAFA3EE1B27BE865662F/" style="background-size: cover">
 {% include navigation.html%}
 {{ content }}
-<iframe width="320" height="85" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=6&py=chongqing&icon=1"></iframe>
+<div id="rili"></div>
+<div id="he-plugin-simple"></div>
+<script>
+    WIDGET = {
+        "CONFIG": {
+            "modules": "01234",
+            "background": "4",
+            "backgroundColor": "000000",
+            "tmpColor": "244882",
+            "tmpSize": "16",
+            "cityColor": "000000",
+            "citySize": "16",
+            "aqiColor": "FF9900",
+            "aqiSize": "16",
+            "weatherIconSize": "24",
+            "alertIconSize": "14",
+            "padding": "7px 7px 7px 7px",
+            "shadow": "0",
+            "language": "auto",
+            "borderRadius": "6",
+            "fixed": "true",
+            "vertical": "center",
+            "horizontal": "center",
+            "right": "10",
+            "top": "15",
+            "key": "f58c412e50d240218dacb549366ab93b"
+        }
+    }
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 <script type="text/javascript" src="{{site.url}}/assets/js/b.js"></script>
 <script>
   b.openZDdiy({
